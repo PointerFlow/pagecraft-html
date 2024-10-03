@@ -1093,6 +1093,7 @@ a {
     .pf-single-product {
         .pf-product-img {
             overflow: hidden;
+            border-radius: 15px;
 
             img {
                 width: 100%;
@@ -1202,6 +1203,14 @@ a {
             font-size: 15px;
             color: #000;
         }
+
+        &:hover {
+            background-color: #020202;
+
+            &::after {
+                color: #ffffff;
+            }
+        }
     }
 
     .swiper-button-prev {
@@ -1216,6 +1225,14 @@ a {
         &::after {
             font-size: 15px;
             color: #000;
+        }
+
+        &:hover {
+            background-color: #020202;
+
+            &::after {
+                color: #ffffff;
+            }
         }
     }
 
