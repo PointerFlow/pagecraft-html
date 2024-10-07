@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/pf-grid.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <style>
+        /* pf-collection-slider start */
+        .pf-collection-slider {
+            padding: 0px 0;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider {
+            position: relative;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-img {
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            transform: scale(1);
+            transition: all 0.4s;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-img:hover img {
+            transform: scale(1.02);
+            transition: all 0.4s;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-content {
+            position: absolute;
+            bottom: 50px;
+            right: 50%;
+            transform: translateX(50%);
+            text-align: center;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-content h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: white;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-content .pf-collection-slider-btn {
+            color: #000000;
+            padding: 10px 15px;
+            background-color: white;
+            border-radius: 30px;
+            font-weight: 500;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+            display: block;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-content .pf-collection-slider-btn::after {
+            background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.25), transparent);
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            transform: skew(-20deg);
+            width: 200%;
+            transition: all 0.8s;
+            left: 100%;
+        }
+
+        .pf-collection-slider .pf-collection-slider-wraper .pf-single-collection-slider .pf-collection-slider-content .pf-collection-slider-btn:hover::after {
+            left: -200px;
+        }
+
+        /* pf-collection-slider end */
+    </style>
+</head>
+
+<body>
+
+    <div class="pf-collection-slider">
+        <div class="pf-container">
+            <div class="pf-row">
+                <div class="pf-collection-slider-wraper">
+                    <div class="swiper pf-collection">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="pf-single-collection-slider">
+                                    <div class="pf-collection-slider-img">
+                                        <a href="#"><img src="assets/images/collection-slider-img-1.jpg" alt="img"></a>
+                                    </div>
+                                    <div class="pf-collection-slider-content">
+                                        <h3>The January Collection</h3>
+                                        <a href="#" class="pf-collection-slider-btn">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="pf-single-collection-slider">
+                                        <div class="pf-collection-slider-img">
+                                            <a href="#"><img src="assets/images/collection-slider-img-2.jpg"
+                                                    alt="img"></a>
+                                        </div>
+                                        <div class="pf-collection-slider-content">
+                                            <h3>Olympia's picks</h3>
+                                            <a href="#" class="pf-collection-slider-btn">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pf-single-collection-slider">
+                                    <div class="pf-collection-slider-img">
+                                        <a href="#"><img src="assets/images/collection-slider-img-1.jpg" alt="img"></a>
+                                    </div>
+                                    <div class="pf-collection-slider-content">
+                                        <h3>The January Collection</h3>
+                                        <a href="#" class="pf-collection-slider-btn">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="pf-single-collection-slider">
+                                        <div class="pf-collection-slider-img">
+                                            <a href="#"><img src="assets/images/collection-slider-img-2.jpg"
+                                                    alt="img"></a>
+                                        </div>
+                                        <div class="pf-collection-slider-content">
+                                            <h3>Olympia's picks</h3>
+                                            <a href="#" class="pf-collection-slider-btn">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pf-single-collection-slider">
+                                    <div class="pf-collection-slider-img">
+                                        <a href="#"><img src="assets/images/collection-slider-img-1.jpg" alt="img"></a>
+                                    </div>
+                                    <div class="pf-collection-slider-content">
+                                        <h3>The January Collection</h3>
+                                        <a href="#" class="pf-collection-slider-btn">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="pf-single-collection-slider">
+                                        <div class="pf-collection-slider-img">
+                                            <a href="#"><img src="assets/images/collection-slider-img-2.jpg"
+                                                    alt="img"></a>
+                                        </div>
+                                        <div class="pf-collection-slider-content">
+                                            <h3>Olympia's picks</h3>
+                                            <a href="#" class="pf-collection-slider-btn">Shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        //pf-collection-slider
+        var pf_collection = new Swiper(".pf-collection", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

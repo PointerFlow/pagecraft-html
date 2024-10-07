@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/pf-grid.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <style>
+        /* pf-category-slider-section start */
+        .pf-category-slider-section {
+            padding: 100px 0;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-category-slider-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: 60px;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper:hover .swiper-button-next {
+            right: 10px;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper:hover .swiper-button-prev {
+            left: 10px;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider {
+            position: relative;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider .pf-category-slider-img img {
+            width: 100%;
+            border-radius: 15px;
+            transform: scale(1);
+            transition: all 0.5s ease;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider .pf-category-slider-btn {
+            position: absolute;
+            bottom: 25px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider .pf-category-slider-btn a {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            width: -moz-fit-content;
+            width: fit-content;
+            border-radius: 30px;
+            color: black;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider .pf-category-slider-btn a svg {
+            width: 20px;
+            display: none;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider .pf-category-slider-btn:hover a {
+            background-color: black;
+            color: white;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider .pf-category-slider-btn:hover svg {
+            display: block;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider:hover .pf-category-slider-img {
+            overflow: hidden;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .pf-single-category-slider:hover .pf-category-slider-img img {
+            transform: scale(1.02);
+            transition: all 0.5s ease;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-next {
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: all 0.5s;
+            right: 50px;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-next::after {
+            font-size: 20px;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-next:hover {
+            background-color: black;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-next:hover::after {
+            font-size: 20px;
+            color: white;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-prev {
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            left: 50px;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-prev::after {
+            font-size: 20px;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-prev:hover {
+            background-color: black;
+            transition: all 0.5s;
+        }
+
+        .pf-category-slider-section .pf-category-slider-wraper .swiper-button-prev:hover::after {
+            font-size: 20px;
+            color: white;
+            transition: all 0.5s;
+        }
+
+        /* pf-category-slider-section end */
+    </style>
+</head>
+
+<body>
+
+    <div class="pf-category-slider-section">
+        <div class="pf-container">
+            <div class="pf-row">
+                <div class="pf-category-slider-wraper">
+                    <h2 class="pf-category-slider-title">Categories you might like</h2>
+                    <div class="swiper pf-category-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="pf-single-category-slider">
+                                    <a href="#" class="pf-category-slider-img">
+                                        <img src="assets/images/category-slider-img-1.jpg" alt="image">
+                                    </a>
+                                    <div class="pf-category-slider-btn">
+                                        <a href="#">
+                                            <span>Tops</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pf-single-category-slider">
+                                    <a href="#" class="pf-category-slider-img">
+                                        <img src="assets/images/category-slider-img-2.jpg" alt="image">
+                                    </a>
+                                    <div class="pf-category-slider-btn">
+                                        <a href="#">
+                                            <span>Sweatshirts</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pf-single-category-slider">
+                                    <a href="#" class="pf-category-slider-img">
+                                        <img src="assets/images/category-slider-img-3.jpg" alt="image">
+                                    </a>
+                                    <div class="pf-category-slider-btn">
+                                        <a href="#">
+                                            <span>Swim</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pf-single-category-slider">
+                                    <a href="#" class="pf-category-slider-img">
+                                        <img src="assets/images/category-slider-img-4.jpg" alt="image">
+                                    </a>
+                                    <div class="pf-category-slider-btn">
+                                        <a href="#">
+                                            <span>Dresses</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pf-single-category-slider">
+                                    <a href="#" class="pf-category-slider-img">
+                                        <img src="assets/images/category-slider-img-5.jpg" alt="image">
+                                    </a>
+                                    <div class="pf-category-slider-btn">
+                                        <a href="#">
+                                            <span>Cardigans</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        // pf-category-slider
+        var pf_category_slider = new Swiper(".pf-category-slider", {
+
+            slidesPerView: 1,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

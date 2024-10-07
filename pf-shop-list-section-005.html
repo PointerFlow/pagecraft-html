@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/pf-grid.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <style>
+        /* pf-shop-list-section start */
+        .pf-shop-list-section {
+            padding: 100px 0;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper {
+            display: flex;
+            align-items: center;
+            background-color: #F7F7F7;
+            gap: 30px;
+        }
+
+        @media (max-width: 767.98px) {
+            .pf-shop-list-section .pf-shop-list-wraper {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content {
+                padding: 25px;
+            }
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content h1 {
+            font-size: 52px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content h1 {
+                font-size: 30px;
+            }
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content p {
+            margin: 20px 0;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content .pf-shop-list-btn {
+            color: white;
+            background-color: black;
+            padding: 10px 15px;
+            border-radius: 30px;
+            display: block;
+            width: -moz-fit-content;
+            width: fit-content;
+            position: relative;
+            overflow: hidden;
+            display: block;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content .pf-shop-list-btn::after {
+            background-image: linear-gradient(90deg, transparent, hsla(0, 0%, 99.56%, 0.45), transparent);
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            transform: skew(-20deg);
+            width: 200%;
+            transition: all 0.8s;
+            left: 100%;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-content .pf-shop-list-btn:hover::after {
+            left: -200px;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-img img {
+            width: 100%;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-img::before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 0%;
+            background: #000;
+            transition: 0.25s;
+            z-index: 3;
+            opacity: 0.1;
+            left: 0;
+            transition: all 0.5s;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-img::after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 0%;
+            background: #000;
+            transition: 0.25s;
+            z-index: 3;
+            opacity: 0.1;
+            bottom: -100%;
+            right: 0;
+            transition: all 0.5s;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-img:hover::before {
+            top: 0;
+            height: 100%;
+            transition: all 0.5s;
+        }
+
+        .pf-shop-list-section .pf-shop-list-wraper .pf-shop-lis-img:hover::after {
+            bottom: 0;
+            height: 100%;
+            transition: all 0.5s;
+            transition-delay: 0.3s;
+        }
+
+        /* pf-shop-list-section end */
+    </style>
+</head>
+
+<body>
+    <div class="pf-shop-list-section">
+        <div class="pf-container">
+            <div class="pf-row">
+                <div class="pf-col-md-12">
+                    <div class="pf-shop-list-wraper">
+                        <div class="pf-shop-lis-img">
+                            <img src="assets/images/shop-list-img-1.jpg" alt="image">
+                        </div>
+                        <div class="pf-shop-lis-content">
+                            <h1>Redefining Fashion Excellence</h1>
+                            <p>Here is your chance to upgrade your wardrobe with a variation of styles</p>
+                            <a class="pf-shop-list-btn" href="#">Read our stories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+</body>
+
+</html>

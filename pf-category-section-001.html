@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/pf-grid.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <style>
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-Bold.woff2") format("woff2"), url("./../fonts/AlbertSans-Bold.woff") format("woff");
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-Light.woff2") format("woff2"), url("./../fonts/AlbertSans-Light.woff") format("woff");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-ExtraBoldItalic.woff2") format("woff2"), url("./../fonts/AlbertSans-ExtraBoldItalic.woff") format("woff");
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-ExtraLight.woff2") format("woff2"), url("./../fonts/AlbertSans-ExtraLight.woff") format("woff");
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-Medium.woff2") format("woff2"), url("./../fonts/AlbertSans-Medium.woff") format("woff");
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-ExtraBold.woff2") format("woff2"), url("./../fonts/AlbertSans-ExtraBold.woff") format("woff");
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-SemiBoldItalic.woff2") format("woff2"), url("./../fonts/AlbertSans-SemiBoldItalic.woff") format("woff");
+            font-weight: 600;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-Regular.woff2") format("woff2"), url("./../fonts/AlbertSans-Regular.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-SemiBold.woff2") format("woff2"), url("./../fonts/AlbertSans-SemiBold.woff") format("woff");
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Albert Sans";
+            src: url("./../fonts/AlbertSans-LightItalic.woff2") format("woff2"), url("./../fonts/AlbertSans-LightItalic.woff") format("woff");
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        /* category-section-pf  start */
+        .pf-category-section {
+            padding: 100px 0;
+        }
+
+        .pf-category-section .pf-category-wraper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+
+        @media (min-width: 992px) {
+            .pf-category-section .pf-category-wraper {
+                overflow-x: auto;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .pf-category-section .pf-category-wraper {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .pf-category-section .pf-category-wraper {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-category-section .pf-category-wraper {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .pf-category-section .pf-category-wraper {
+                gap: 40px;
+            }
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single {
+            display: flex;
+            flex-direction: column;
+            width: 140px;
+            align-items: center;
+            position: relative;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .pf-category-section .pf-category-wraper .pf-category-single {
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .pf-category-section .pf-category-wraper .pf-category-single {
+                width: auto;
+            }
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single .pf-category-single-img {
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single .pf-category-single-img img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single .pf-category-single-img:hover {
+            transform: scale(1.02);
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single span {
+            margin-top: 15px;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single span a {
+            color: black;
+            transition: all 0.4s ease;
+            font-weight: 500;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single span a:hover {
+            color: #db1215;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-single .pf-sale-off {
+            font-size: 10px;
+            background-color: black;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 50px;
+            position: absolute;
+            left: -18px;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all .pf-shop-all-icon-wraper {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all .pf-shop-all-icon-wraper svg {
+            width: 20px;
+            height: 20px;
+            color: black;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all .pf-shop-all-icon-wraper:hover {
+            border: 1px solid #db1215;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all .pf-shop-all-icon-wraper:hover svg {
+            color: #db1215;
+            transition: all 0.4s ease;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all span {
+            margin-top: 15px;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all span a {
+            color: black;
+            transition: all 0.4s ease;
+            font-weight: 500;
+        }
+
+        .pf-category-section .pf-category-wraper .pf-category-shop-all span a:hover {
+            color: #db1215;
+            transition: all 0.4s ease;
+        }
+
+        /* category-section-pf  end */
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="pf-category-section">
+        <div class="pf-container">
+            <div class="pf-row">
+                <div class="pf-col-md-10 pf-offset-md-1">
+                    <div class="pf-category-wraper">
+                        <div class="pf-category-single">
+                            <div class="pf-category-single-img">
+                                <a href="#"><img src="assets/images/category-img-7.jpg" alt="image"></a>
+                            </div>
+                            <span><a href="#">New Arrivals</a></span>
+                        </div>
+                        <div class="pf-category-single">
+                            <div class="pf-category-single-img">
+                                <a href="#"><img src="assets/images/category-img-7.jpg" alt="image"></a>
+                            </div>
+                            <span><a href="#">Best Sellers</a></span>
+                        </div>
+                        <div class="pf-category-single">
+                            <div class="pf-category-single-img">
+                                <a href="#"><img src="assets/images/category-img-7.jpg" alt="image"></a>
+                            </div>
+                            <span><a href="#">Top Rated</a></span>
+                        </div>
+                        <div class="pf-category-single">
+                            <div class="pf-category-single-img">
+                                <a href="#"><img src="assets/images/category-img-7.jpg" alt="image"></a>
+                            </div>
+                            <span><a href="#">Brands We Love</a></span>
+                        </div>
+                        <div class="pf-category-single">
+                            <div class="pf-category-single-img">
+                                <a href="#"><img src="assets/images/category-img-7.jpg" alt="image"></a>
+                            </div>
+                            <span><a href="#">Trending</a></span>
+                        </div>
+                        <div class="pf-category-single">
+                            <div class="pf-sale-off">
+                                30% off
+                            </div>
+
+                            <div class="pf-category-single-img">
+                                <a href="#"><img src="assets/images/category-img-7.jpg" alt="image"></a>
+                            </div>
+                            <span><a href="#">The Re-Imagined</a></span>
+                        </div>
+                        <div class="pf-category-shop-all">
+                            <a href="#">
+                                <div class="pf-shop-all-icon-wraper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <span><a href="#">Shop all</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

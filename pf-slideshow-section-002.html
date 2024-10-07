@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/pf-grid.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <style>
+        /* pf-slideshow-section start */
+        .pf-slideshow-section {
+            overflow-x: hidden;
+        }
+
+        .pf-slideshow-section .pf-single-slideshow {
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 700px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .pf-slideshow-section .pf-single-slideshow {
+                background-size: 100%;
+                height: 375px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .pf-slideshow-section .pf-single-slideshow {
+                background-size: 100%;
+                height: 300px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .pf-slideshow-section .pf-single-slideshow {
+                background-size: 100%;
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .pf-single-slideshow {
+                background-size: 100%;
+                height: 200px;
+            }
+        }
+
+        .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content {
+            position: absolute;
+            top: 50%;
+            left: 200px;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content {
+                left: 100px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content {
+                left: 50px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content {
+                left: 30px;
+                width: 230px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content {
+                left: 30px;
+                width: 230px;
+            }
+        }
+
+        .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content h1 {
+            font-size: 96px;
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content h1 {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content h1 {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content h1 {
+                font-size: 38px;
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+        }
+
+        .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content p {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 360px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content p {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content p {
+                margin: 10px 0;
+            }
+        }
+
+        .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn {
+            margin-top: 60px;
+            display: block;
+            color: white;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            background-color: black;
+            width: -moz-fit-content;
+            width: fit-content;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn {
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn {
+                margin-top: 20px;
+                padding: 5px 10px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn {
+                margin-top: 0;
+                padding: 2px 5px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn {
+                margin-top: 0;
+                padding: 2px 5px;
+                font-size: 10px;
+            }
+        }
+
+        .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn svg {
+            width: 25px;
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .pf-single-slideshow .pf-single-slideshow-content .pf-primary-btn svg {
+                width: 15px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .pf-slideshow-section .swiper {
+                padding-bottom: 20px;
+            }
+        }
+
+        .pf-slideshow-section .swiper-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .pf-slideshow-section .swiper-pagination-bullet {
+            background: black;
+            opacity: 100%;
+        }
+
+        .pf-slideshow-section .swiper-pagination-bullet-active {
+            position: relative;
+        }
+
+        .pf-slideshow-section .swiper-pagination-bullet-active::before {
+            content: "";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            width: 300%;
+            height: 300%;
+            border-radius: 50%;
+            background-color: #000000;
+            opacity: 10%;
+        }
+
+        /* pf-slideshow-section end */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="pf-slideshow-section">
+        <div class="pf-container-fluid">
+            <div class="pf-row">
+                <div class="swiper pf-slideshow">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="pf-single-slideshow"
+                                style="background-image: url('assets/images/women-slideshow-1.jpg');">
+                                <div class="pf-single-slideshow-content">
+                                    <h1>Elegance</h1>
+                                    <p>From casual to formal, we've got you covered</p>
+                                    <a href="#" class="pf-primary-btn">
+                                        <span>Shop collection</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pf-single-slideshow"
+                                style="background-image: url('assets/images/women-slideshow-2.jpg');">
+                                <div class="pf-single-slideshow-content">
+                                    <h1>Boutique</h1>
+                                    <p>From casual to formal, we've got you covered</p>
+                                    <a href="#" class="pf-primary-btn">
+                                        <span>Shop collection</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pf-single-slideshow"
+                                style="background-image: url('assets/images/women-slideshow-3.jpg');">
+                                <div class="pf-single-slideshow-content">
+                                    <h1>Luxury</h1>
+                                    <p>From casual to formal, we've got you covered</p>
+                                    <a href="#" class="pf-primary-btn">
+                                        <span>Shop collection</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        // pf-slideshow
+        var pf_slideshow = new Swiper(".pf-slideshow", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+        });
+    </script>
+</body>
+
+</html>
