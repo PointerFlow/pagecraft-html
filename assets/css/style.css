@@ -1527,6 +1527,12 @@ a {
 .pf-category-shop-slider .pf-category-shop-slider-wraper .pf-category-shop-slider-left {
   position: relative;
 }
+.pf-category-shop-slider .pf-category-shop-slider-wraper .pf-category-shop-slider-left h4 {
+  position: absolute;
+  top: -65px;
+  left: 100px;
+  z-index: 9999;
+}
 .pf-category-shop-slider .pf-category-shop-slider-wraper .pf-category-shop-slider-left .pf-single-category-shop {
   position: relative;
 }
