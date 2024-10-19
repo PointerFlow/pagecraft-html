@@ -119,8 +119,22 @@ var swiper = new Swiper(".product-slider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
 });
 
 
